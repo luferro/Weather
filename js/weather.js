@@ -3,7 +3,7 @@ const searchCitybtn = document.getElementById("searchbtn");
 const weatherBodyFront = document.getElementById("weather-body-front");
 const weatherBodyBack = document.getElementById("weather-body-back");
 const erro = document.getElementById("erro");
-const APIKEY = APIKEY;
+const APIKEY = process.env.APIKEY;
 
 var city;
 var lastsearchedcity;
