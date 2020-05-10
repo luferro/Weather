@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Timer">
+    <meta name="keywords" content="">
+    <meta name="author" content="Luís Ferro">
+	
+    <title>Timer</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body> 
+    <h1 class="mt-2">Simple Weather App</h1>
+    <div class="row mt-5">
+        <input type="text" id="search" placeholder="Cidade..." autocomplete="off">
+        <button type="submit" class="ml-2" id="searchbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+    <p id="erro" class="text-center mt-4"></p>
+    <div class="row mt-5">
+        <div class="card" tabindex="1">
+            <div class="flipper">
+                <div class="front">
+                    <div id="weather-body-front" class="card-body"></div>
+                </div>
+                <div class="back">
+                    <div id="weather-body-back" class="card-body"></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="js/weather.js"></script>
+<script src="js/darkmode.js"></script>
+</html>

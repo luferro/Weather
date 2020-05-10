@@ -1,0 +1,101 @@
+html, body {
+	height:100%;
+    overflow-x:hidden;
+    background: rgb(34,193,195);
+    background: linear-gradient(148deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.card{
+    perspective: 1000px;
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:focus .flipper{
+    transform: rotateY(180deg);
+}
+
+.card, .front, .back {
+    width: 500px;
+    border-radius: 25px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+#search{
+    width:475px;
+    background: none;
+    border:none;
+    padding:5px;
+    border-bottom: 2px solid #ffffff;
+}
+
+::placeholder{
+    color: #ffffff;
+    opacity: 1;
+}
+
+button{
+    background: none;
+	color: #ffffff;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.row, .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex p{
+    font-size: 18px;
+}
+
+.flex .city-icon {
+    width: 125px;
+    height: 125px;
+}
+
+.dark{
+    background: rgb(34,193,195);
+    background: linear-gradient(148deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+}
