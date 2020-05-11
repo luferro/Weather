@@ -30,6 +30,7 @@ searchCity.addEventListener("keyup", e => {
             return erro.innerHTML = "You are already seeing the weather for "+cityValue;
         lastsearchedcity = cityValue;
         erro.innerHTML = "";
+        
         weatherBodyFront.innerHTML = "";
         weatherBodyBack.innerHTML = "";
 
@@ -49,8 +50,6 @@ function fetchWeather(city) {
             city: city
         })
     }).then(res => res.json()).then(data => {
-        if(data.cod == 404) console.log("am retard");
-
         localStorage.setItem("city", city);
 
         const front = document.createElement('div');

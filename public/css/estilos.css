@@ -25,6 +25,7 @@ h1{
 }
 
 .card, .front, .back {
+    max-width: 100%;
     width: 500px;
     border-radius: 25px;
 }
@@ -38,7 +39,8 @@ h1{
 
 .front, .back {
 	backface-visibility: hidden;
-	position: absolute;
+    position: absolute;
+    height:300px;
 	top: 0;
     left: 0;
     background-color: #ffffff;
@@ -53,7 +55,12 @@ h1{
 	transform: rotateY(180deg);
 }
 
+#weather-body-front:empty, #weather-body-back:empty{
+    display:none;
+}
+
 #search{
+    max-width: 80%;
     width:475px;
     background: none;
     border:none;
